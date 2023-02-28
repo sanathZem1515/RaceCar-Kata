@@ -18,9 +18,8 @@ public class TelemetryClient implements TelemetryClientInterface
     {
         return onlineStatus; 
     }
-
-
-    TelemetryClient( Connection connection,Transfer transfer) {
+    
+    TelemetryClient( ConnectionInterface connection,TransferInterface transfer) {
         this.connection = connection;
         this.transfer = transfer;
     }
